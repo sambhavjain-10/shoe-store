@@ -1,0 +1,30 @@
+
+###
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "loafer4 BLUE",
+  "category": "loafers",
+  "price": "2500",
+  "color": "blue"
+}
+
+###
+
+POST http://localhost:5000/api/products/filtered
+Content-Type: application/json
+
+{
+  "category": [],
+  "price": {
+    "gt": "",
+    "lt": ""
+  },
+  "color": [],
+  "sort": "new"
+}
+
+###
+
+DELETE http://localhost:5000/api/products/6087f47a47767c2524f72d46
